@@ -4,7 +4,7 @@ Run the build with the `Count` build scheme. Look though the output which is upd
 
 ## Removing Data Store
 
-In `Build.xcconfig` the setting below is defined. It can be commented out to remove the user of DataStore
+In `Build.xcconfig` the setting below is defined. It can be commented out to remove the use of DataStore which ideally will cause the executable which links this Swift Package as a static library from the final binary for a Release build.
 
 ```sh
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) USE_DATASTORE
@@ -28,6 +28,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) USE_DATASTORE
 The parser will produce the Abstract Syntax Tree (AST) which can provide the name of the module for all symbols used in a source file so tha that all uses of the SDK can be counted.
 
 * [Dumping AST with Swift Compiler](https://stackoverflow.com/questions/37847271/is-it-possible-to-dump-the-ast-while-building-an-xcode-project)
+* [Swift Syntax](https://nshipster.com/swiftsyntax/) (NSHipter)
 
 ---
 
