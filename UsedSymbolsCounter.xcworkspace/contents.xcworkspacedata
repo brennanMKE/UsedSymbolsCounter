@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Scripts">
+      <FileRef
+         location = "group:count.sh">
+      </FileRef>
+      <FileRef
+         location = "group:build.sh">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Output">
+      <FileRef
+         location = "group:AnyApp/log.txt">
+      </FileRef>
+      <FileRef
+         location = "group:AnyApp/raw.txt">
+      </FileRef>
+      <FileRef
+         location = "group:AnyApp/sdk.txt">
+      </FileRef>
+      <FileRef
+         location = "group:AnyApp/symbols.txt">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:AnyApp/AnyApp.xcodeproj">
+   </FileRef>
+</Workspace>
