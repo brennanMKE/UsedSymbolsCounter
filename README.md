@@ -14,6 +14,20 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) USE_DATASTORE
 
 * Public symbols are never dead stripped: ([SR-521])
 * Don't export public symbols from static libraries by default ([SR-1021])
+* Why public symbols are always no_dead_strip? ([Swift Forums](https://forums.swift.org/t/why-public-symbols-are-always-no-dead-strip/47264))
+
+## Tools
+
+* nm
+* otool
+* symbols
+* file
+
+## Abstract Syntax Tree
+
+The parser will produce the Abstract Syntax Tree (AST) which can provide the name of the module for all symbols used in a source file so tha that all uses of the SDK can be counted.
+
+* [Dumping AST with Swift Compiler](https://stackoverflow.com/questions/37847271/is-it-possible-to-dump-the-ast-while-building-an-xcode-project)
 
 ---
 
