@@ -1,0 +1,7 @@
+#include "Build.xcconfig"
+
+DEAD_CODE_STRIPPING = NO
+
+GCC_OPTIMIZATION_LEVEL = 0
+
+COPY_PHASE_STRIP = NO

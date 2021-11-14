@@ -50,6 +50,8 @@
 		26150C9F2740EBF700B79429 /* MyClientSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyClientSDK; path = ../MyClientSDK; sourceTree = "<group>"; };
 		26150CA52740ED5E00B79429 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		26150CB32740F2C300B79429 /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Build.xcconfig; sourceTree = "<group>"; };
+		26150CB42741AF9D00B79429 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		26150CB52741AFA600B79429 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				26150CB32740F2C300B79429 /* Build.xcconfig */,
+				26150CB42741AF9D00B79429 /* Debug.xcconfig */,
+				26150CB52741AFA600B79429 /* Release.xcconfig */,
 				26150C9F2740EBF700B79429 /* MyClientSDK */,
 				26150C8F2740EBDA00B79429 /* AnyApp */,
 				26150C8E2740EBDA00B79429 /* Products */,
@@ -234,7 +238,7 @@
 /* Begin XCBuildConfiguration section */
 		26150C9A2740EBDB00B79429 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26150CB32740F2C300B79429 /* Build.xcconfig */;
+			baseConfigurationReference = 26150CB42741AF9D00B79429 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -266,14 +270,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -296,7 +298,7 @@
 		};
 		26150C9B2740EBDB00B79429 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26150CB32740F2C300B79429 /* Build.xcconfig */;
+			baseConfigurationReference = 26150CB52741AFA600B79429 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -328,7 +330,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -386,6 +387,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnyApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (

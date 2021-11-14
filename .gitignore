@@ -1,4 +1,6 @@
 .DS_Store
 *.rb
 xcuserdata
+*.txt
 AnyApp/*.txt
+*.xcarchive
